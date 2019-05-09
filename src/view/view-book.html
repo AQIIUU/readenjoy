@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--引入head-common-->
+    <%= require("html-loader!./layout/head-common.html")%>
+    <title>ReadEnjoy | <%= htmlWebpackPlugin.options.title%></title>
+    <!--swf浏览需要的js文件-->
+    <script type="text/javascript" src="../../src/util/flexpaper_flash.js"></script>
+    <script type="text/javascript" src="../../src/util/flexpaper_flash_debug.js"></script>
+</head>
+<body style="background-color: #f9f9f9">
+<div>
+    <div class="left-book">
+
+    </div>
+    <!-- 浏览文件容器-->
+    <div style="position:absolute;left:50%;margin-left: -410px;margin-top: 0px">
+        <a id="viewerPlaceHolder" style="width:820px;height:650px;display:block"></a>
+    </div>
+</div>
+
+</body>
+</html>

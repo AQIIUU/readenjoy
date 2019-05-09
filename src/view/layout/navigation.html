@@ -1,0 +1,68 @@
+<nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <!-- 折叠按钮 -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#MyNavBar" aria-expanded="false">
+                <span class="sr-only">ReadEnjoy</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 网站logo -->
+            <a class="navbar-brand logo" href="index.html">
+                <img src="../../image/logo.png" alt="ReadEnjoy">
+            </a>
+        </div>
+        <!-- 类目 + 搜索 + 注册、登录 -->
+        <div class="collapse navbar-collapse"  id="MyNavBar" >
+            <!--导航栏信息-->
+            <ul  class="nav navbar-nav navbar-left" id="keyword">
+            </ul>
+            <div id="nav-side">
+
+            </div>
+            <!-- 搜索框 -->
+            <form class="navbar-form navbar-right" method="post" action="#">
+                <div class="search">
+                    <form id="search-content">
+                        <input type="text"  id="conditionName" name="conditionName" placeholder="书名/作者/出版社">
+                        <button type="submit" id="book-search"></button>
+                    </form>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- 导航栏 结束 -->
+
+<!-- 反馈模态框 -->
+<div class="modal fade" id="feedBackModal" tabindex="-1" role="dialog" aria-labelledby="feedBackModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document" style="margin-top: 80px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="feedBackModalLabel">反馈</h4>
+            </div>
+                <div class="modal-body">
+                    <div style="margin-bottom: 20px">
+                        <p style="float: left;line-height: 36px;">反馈类型：</p>
+                        <div class="select">
+                            <p>请选择反馈类型</p>
+                            <ul>
+                                <li data-value="网站反馈">网站反馈</li>
+                                <li data-value="书籍反馈">书籍反馈</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feed-content">
+                        <p style="float: left;line-height: 36px;">反馈内容：</p>
+                        <textarea required="required" rows="8" cols="58" placeholder="请输入反馈内容..." readonly></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="cancel" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" id="feedback-submit" disabled="disabled" class="btn btn-primary" style="padding: 6px 20px;margin-left: 10px">提交</button>
+                </div>
+        </div>
+    </div>
+</div>
