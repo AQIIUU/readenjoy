@@ -1,23 +1,9 @@
-# ReadEnjoyFront
+# readenjoy
+
+readenjoy--公版书共享网站的前端开发
 
 #### 项目介绍
-ReadEnjoy前端开发
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
+作为一个以电子图书资源共享为主题的网站，本网站采用前后端分离架构进行开发，前端采用HTML5+CSS3+JavaScript配合hogan模板引擎实现了用户注册/登录、个人信息管理，书籍在线阅读、上传、下载、收藏、评论与分享等主要功能。为了提升用户体验感，利用layer弹层组件进行了相应的提示机制，同时使用CSS3+媒体查询实现网页自适应布局，满足了不同尺寸的需求。对导航、footer等公用模块进行封装，采用组件化开发。前端在本地开发和打包编译时，利用NPM包管理器进行依赖安装与管理；使用Webpack对JS、CSS、图片等资源进行压缩打包。在前端开发时，使用webpack-dev-server来提供一个开发服务器，监听文件变化后实时打包，进行热替换，实现页面自动刷新，提高开发效率。
 
 #### 参与贡献
 
@@ -25,13 +11,3 @@ ReadEnjoy前端开发
 2. 新建 Feat_xxx 分支
 3. 提交代码
 4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
